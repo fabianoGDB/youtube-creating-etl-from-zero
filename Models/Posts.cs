@@ -9,9 +9,9 @@ namespace youtube_etl_do_zero.Models
 {
     public class Posts
     {
-        [Key]
         [JsonPropertyName("userId")]
         public long UserId { get; set; }
+        [Key]
         [JsonPropertyName("id")]
         public long Id { get; set; }
         [JsonPropertyName("title")]
