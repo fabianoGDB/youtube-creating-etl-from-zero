@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text.Json.Serialization;
+using System.Threading.Tasks;
+
+namespace youtube_etl_do_zero.Models
+{
+    public class Users
+    {
+        [Key]
+        [JsonPropertyName("id")]
+        public long Id { get; set; }
+
+        [JsonPropertyName("name")]
+        public string Name { get; set; }
+
+        [JsonPropertyName("username")]
+        public string Username { get; set; }
+
+        [JsonPropertyName("email")]
+        public string Email { get; set; }
+    }
+}
