@@ -21,5 +21,14 @@ namespace youtube_etl_do_zero.Models
 
         [JsonPropertyName("email")]
         public string Email { get; set; }
+
+        [JsonPropertyName("address")]
+        public Address Address { get; set; }
+
+        [JsonPropertyName("phone")]
+        public string Phone { get; set; }
+
+        [JsonPropertyName("website")]
+        public string Website { get; set; }
     }
 }
